@@ -125,7 +125,7 @@ class BayesianOptimization(Observable):
 
         # Internal GP regressor
         self._gp = GaussianProcessRegressor(
-            kernel=Matern(nu=2.5),
+            kernel=Matrn(nu=2.5),
             alpha=1e-6,
             normalize_y=True,
             n_restarts_optimizer=5,
